@@ -1,0 +1,48 @@
+{
+  "name": "Ilyushin Il-62 (Test)",
+  "author": "L",
+  "version": "0.2",
+  "description": "Test model with flaps and spoilers",
+
+  "model": "IlyushinIL62.glb",
+   "fullPath": "https://raw.githubusercontent.com/cowairlinesNEO/IlyushinIL-62/main/",
+  "scale": 1.0,
+
+  "cockpit": {
+    "position": [0, 2.5, 12],
+    "lookAt": [0, 2.5, 0]
+  },
+
+  "engines": [
+    { "name": "Engine 1", "position": [-2.5, 0, -18], "thrust": 45000 },
+    { "name": "Engine 2", "position": [-1, 0, -18], "thrust": 45000 },
+    { "name": "Engine 3", "position": [1, 0, -18], "thrust": 45000 },
+    { "name": "Engine 4", "position": [2.5, 0, -18], "thrust": 45000 }
+  ],
+
+  "gear": [
+    { "name": "Nose Gear", "position": [0, -2.5, 10], "retractable": true },
+    { "name": "Main Gear Left", "position": [-3, -2.5, -2], "retractable": true },
+    { "name": "Main Gear Right", "position": [3, -2.5, -2], "retractable": true }
+  ],
+
+  "controlSurfaces": [
+  { "name": "aileron_left", "type": "aileron", "position": [-10, 0, 0] },
+  { "name": "aileron_right", "type": "aileron", "position": [10, 0, 0] },
+
+  { "name": "elevator", "type": "elevator", "position": [0, 2, -20] },
+  { "name": "rudder", "type": "rudder", "position": [0, 5, -20] },
+
+  { "name": "flaps", "type": "flap", "position": [0, -0.5, -2] },
+  { "name": "spoilers", "type": "spoiler", "position": [0, 0.2, -1] }
+   ],
+
+  "flightModel": {
+    "mass": 165000,
+    "wingArea": 280,
+    "dragCoefficient": 0.035,
+    "liftCoefficient": 1.7,
+    "maxSpeed": 900,
+    "stallSpeed": 210
+  }
+}
